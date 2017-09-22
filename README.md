@@ -2,7 +2,8 @@
 
 This project is intended as a guideline to the basic setup of a web application, based off of the _CourseWare_ workshop presented by Trevor Page. 
 
-##Prerequisites
+## Prerequisites
+
 To be able to setup a basic web application, the following is required:
    1. [_MySQL community server_](https://dev.mysql.com/downloads/mysql) setup on local device.
    2. MySQL interface, I am using [_Toad_](https://www.toadworld.com/m/freeware/1656).
@@ -10,10 +11,12 @@ To be able to setup a basic web application, the following is required:
 
 Once both of these are setup and running on your local device, you can continue with the project described here.
 
-##Setup for Project
+## Setup for Project
+
 To start creating the web application: 
    1. Start by creating a new _Spring Starter Project_, available under _File -> New -> Spring Starter Project_.
    2. Suggested project setup:
+
    Property   | Description
    :---------:|---------------------
    Service URL| The URL that STS calls to generate the project, set to http://start.spring.io
@@ -28,6 +31,7 @@ To start creating the web application:
    Version    | 0.0.1-SNAPSHOT (Leave as is)
    Description| Description of the project
    Package    | Package name for project origin, set to "com.ProjectName"
+
    3. After clicking next, select the version of _Spring Boot_ preferably the latest version. Current version is 1.5.7
    4. Select the source packages to include in the project. Basics required in project for setup are
       + JPA
@@ -35,8 +39,7 @@ To start creating the web application:
       + ThymeLeaf
       + Web
    5. Click finish, and this will generate the project.
-
-    Having completed this STS will create all the required project files, packages, and folders automatically. This project will contain a main application `.java` file named _projectNameApplication.java_ which defines the main public class for the application to run.
+   Having completed this STS will create all the required project files, packages, and folders automatically. This project will contain a main application `.java` file named _projectNameApplication.java_ which defines the main public class for the application to run.
 
    6. Continuing with the setup of the project, a new database for the project has to be created on the local MySQL server. This can be done using the MySQL interface, along with creating the relevant user for the database to allow us to access it from our application.
 
